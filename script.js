@@ -4,6 +4,24 @@
 (function () {
   'use strict';
 
+  /* ---------- Image fallback chain ----------
+     Primary = Unsplash. If it fails, try a topical LoremFlickr photo,
+     then finally the bundled on-brand SVG so nothing ever shows broken. */
+  document.querySelectorAll('img[data-svg]').forEach((img) => {
+    const toSvg = () => { if (img.src.indexOf('assets/') === -1) img.src = img.dataset.svg; };
+    img.addEventListener('error', function onErr() {
+      if (img.dataset.flickr && img.src.indexOf('loremflickr') === -1 && img.src.indexOf('assets/') === -1) {
+        img.src = img.dataset.flickr;            // step 1 → real topical photo
+      } else {
+        toSvg();                                 // step 2 → local SVG, stop here
+        img.removeEventListener('error', onErr);
+      }
+    });
+    // Watchdog: if neither remote source has loaded in time, drop to the
+    // bundled SVG so an image can never stay blank on a slow/blocked network.
+    setTimeout(() => { if (!img.complete || img.naturalWidth === 0) toSvg(); }, 7000);
+  });
+
   /* ---------- Preloader ---------- */
   const preloader = document.getElementById('preloader');
   const bar = preloader.querySelector('.preloader__bar span');

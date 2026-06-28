@@ -25,4 +25,13 @@ python3 -m http.server 8000
 - `styles.css` — design system, layout, animations
 - `script.js` — preloader, cursor, scroll motion, counters, form
 
-Images are loaded from [Unsplash](https://unsplash.com); swap them for real studio photos before launch.
+## Images
+Each `<img>` uses a resilient fallback chain so a photo can never appear broken:
+
+1. **Unsplash** (`images.unsplash.com`) — primary, real barbershop photography.
+2. **LoremFlickr** (`loremflickr.com`) — topical real photo if the primary fails.
+3. **Local SVG** (`assets/*.svg`) — bundled on-brand graphic if both remote sources fail or the network is offline.
+
+The chain is wired via `data-flickr` / `data-svg` attributes on each image and handled in `script.js` (with a 7s watchdog for slow networks).
+
+**To use your own photos:** either replace the files in `assets/` (keeping the same names) or change each image's `src` in `index.html` to your real studio photo URLs.
