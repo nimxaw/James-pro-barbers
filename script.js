@@ -70,6 +70,12 @@
       const offset = (rect.top + rect.height / 2 - window.innerHeight / 2) * speed;
       el.style.transform = 'translateY(' + (-offset) + 'px)';
     });
+    // reveal safety net — guarantees elements reveal on scroll even if the
+    // IntersectionObserver misses one (e.g. clip-path quirks).
+    document.querySelectorAll('.reveal:not(.in), .reveal-img:not(.in)').forEach((el) => {
+      if (el.closest('.hero')) return;
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.88) el.classList.add('in');
+    });
   }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
