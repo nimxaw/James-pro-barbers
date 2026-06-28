@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="gaknlv" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb199"/><stop offset="1" stop-color="#ff4d2e"/>
+    </linearGradient><filter id="fv3o08"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#gaknlv)"/>
+  <g opacity="0.10" stroke="#f4f1ea" stroke-width="40">
+    <circle cx="192" cy="120" r="448.00000000000006" fill="none"/>
+    <circle cx="1472" cy="900" r="352" fill="none"/>
+  </g>
+  <g transform="translate(-50 -390) scale(8.5)" stroke="#f4f1ea" stroke-width="6" opacity="0.92"><g stroke-linecap="round" stroke-linejoin="round" fill="none">
+     <rect x="84" y="50" width="32" height="100" rx="16"/>
+     <path d="M88 64 L112 56 M88 84 L112 76 M88 104 L112 96 M88 124 L112 116"/>
+     <path d="M78 50 h44 M78 150 h44"/><path d="M100 50 V40 M100 160 V150"/></g></g>
+  
+  <rect x="96" y="60" width="492" height="100" rx="50" fill="#f4f1ea"/><text x="108" y="130" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="50" fill="#ffb199">JAMES PRO</text>
+  <rect width="1600" height="1000" filter="url(#fv3o08)" opacity="0.5"/>
+</svg>

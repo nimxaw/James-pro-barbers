@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1125" viewBox="0 0 900 1125" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="gratq3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14130f"/><stop offset="1" stop-color="#2c2a22"/>
+    </linearGradient><filter id="fpkcqn"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/></filter>
+  </defs>
+  <rect width="900" height="1125" fill="url(#gratq3)"/>
+  <g opacity="0.10" stroke="#c8ff3d" stroke-width="28.125">
+    <circle cx="108" cy="135" r="252.00000000000003" fill="none"/>
+    <circle cx="828" cy="1012.5" r="198" fill="none"/>
+  </g>
+  <g transform="translate(-315 -247.5) scale(7.6499999999999995)" stroke="#c8ff3d" stroke-width="6" opacity="0.92"><g stroke-linecap="round" stroke-linejoin="round" fill="none">
+     <path d="M60 70 h80 v40 h-80 z"/><path d="M70 110 v30 h60 v-30"/><path d="M100 140 v25"/>
+     <path d="M70 165 h60"/><path d="M55 80 h-12 M157 80 h-12"/></g></g>
+  <text x="450" y="922.5" text-anchor="middle" font-family="Anton, sans-serif" font-size="99" fill="#c8ff3d" opacity="0.95" letter-spacing="1">THE STUDIO</text>
+  <rect x="54" y="67.5" width="445.2" height="90" rx="45" fill="#c8ff3d"/><text x="66" y="130.5" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="45" fill="#14130f">EST. 2024</text>
+  <rect width="900" height="1125" filter="url(#fpkcqn)" opacity="0.5"/>
+</svg>

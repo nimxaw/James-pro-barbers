@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g0b3p4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9bbf2e"/><stop offset="1" stop-color="#c8ff3d"/>
+    </linearGradient><filter id="fh28lh"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/></filter>
+  </defs>
+  <rect width="600" height="800" fill="url(#g0b3p4)"/>
+  <g opacity="0.10" stroke="#14130f" stroke-width="20">
+    <circle cx="72" cy="96" r="168.00000000000003" fill="none"/>
+    <circle cx="552" cy="720" r="132" fill="none"/>
+  </g>
+  <g transform="translate(-209.99999999999994 -141.99999999999994) scale(5.1)" stroke="#14130f" stroke-width="6" opacity="0.92"><g stroke-linecap="round" stroke-linejoin="round" fill="none">
+     <rect x="40" y="86" width="120" height="28" rx="6"/>
+     <path d="M52 114 V150 M70 114 V150 M88 114 V150 M106 114 V150 M124 114 V150 M142 114 V150"/></g></g>
+  <text x="300" y="656" text-anchor="middle" font-family="Anton, sans-serif" font-size="66" fill="#14130f" opacity="0.95" letter-spacing="1">SAMI</text>
+  
+  <rect width="600" height="800" filter="url(#fh28lh)" opacity="0.5"/>
+</svg>

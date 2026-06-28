@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="ggw270" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f1d17"/><stop offset="1" stop-color="#14130f"/>
+    </linearGradient><filter id="fy9x4m"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/></filter>
+  </defs>
+  <rect width="600" height="400" fill="url(#ggw270)"/>
+  <g opacity="0.10" stroke="#c8ff3d" stroke-width="15">
+    <circle cx="72" cy="48" r="168.00000000000003" fill="none"/>
+    <circle cx="552" cy="360" r="132" fill="none"/>
+  </g>
+  <g transform="translate(-40 -156) scale(3.4)" stroke="#c8ff3d" stroke-width="6" opacity="0.92"><g stroke-linecap="round" stroke-linejoin="round" fill="none">
+     <path d="M40 150 L120 70 q12 -12 24 0 q12 12 0 24 L70 168"/><path d="M120 80 L150 50"/>
+     <circle cx="155" cy="45" r="8"/></g></g>
+  
+  
+  <rect width="600" height="400" filter="url(#fy9x4m)" opacity="0.5"/>
+</svg>

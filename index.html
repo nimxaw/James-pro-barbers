@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="James Pro — premium men's barbershop in Dubai. Sharp cuts, hot towel shaves, beard sculpting and grooming by master barbers. Book your chair today." />
+  <title>James Pro — Premium Men's Barbershop · Dubai</title>
+
+  <!-- Custom fonts (non-default) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <span class="preloader__name">JAMES&nbsp;PRO</span>
+      <div class="preloader__bar"><span></span></div>
+      <span class="preloader__count" id="preloaderCount">0%</span>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo" data-cursor="hover">
+      <span class="nav__logo-mark">✄</span> JAMES<span>PRO</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" data-cursor="hover">About</a>
+      <a href="#services" data-cursor="hover">Services</a>
+      <a href="#pricing" data-cursor="hover">Pricing</a>
+      <a href="#gallery" data-cursor="hover">Gallery</a>
+      <a href="#team" data-cursor="hover">Barbers</a>
+      <a href="#contact" data-cursor="hover">Contact</a>
+    </nav>
+    <a href="#book" class="btn btn--solid nav__cta" data-cursor="hover">Book Now</a>
+    <button class="nav__burger" id="navBurger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__bg" data-parallax="0.25">
+      <img src="assets/hero.svg" alt="Barber giving a sharp haircut" />
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal" data-cursor="hover">★ Dubai · Est. 2024 · Master Barbers</p>
+      <h1 class="hero__title">
+        <span class="line"><span>SHARP</span></span>
+        <span class="line"><span>LOOKS,</span></span>
+        <span class="line accent"><span>BOLD MEN.</span></span>
+      </h1>
+      <p class="hero__sub reveal">Premium grooming for the modern gentleman. Precision fades, hot‑towel shaves and beard artistry in the heart of Dubai.</p>
+      <div class="hero__actions reveal">
+        <a href="#book" class="btn btn--solid" data-cursor="hover">Book Your Chair →</a>
+        <a href="#services" class="btn btn--ghost" data-cursor="hover">View Services</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Marquee strip -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>FADES</span><span class="dot">✦</span>
+      <span>HOT TOWEL SHAVE</span><span class="dot">✦</span>
+      <span>BEARD SCULPT</span><span class="dot">✦</span>
+      <span>KIDS CUTS</span><span class="dot">✦</span>
+      <span>STYLING</span><span class="dot">✦</span>
+      <span>FADES</span><span class="dot">✦</span>
+      <span>HOT TOWEL SHAVE</span><span class="dot">✦</span>
+      <span>BEARD SCULPT</span><span class="dot">✦</span>
+      <span>KIDS CUTS</span><span class="dot">✦</span>
+      <span>STYLING</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="about__media">
+        <img class="reveal-img" src="assets/about.svg" alt="Barbershop interior" data-parallax="0.12" />
+        <div class="about__badge reveal" data-cursor="hover">
+          <strong>10+</strong>
+          <span>Years of combined craft</span>
+        </div>
+      </div>
+      <div class="about__text">
+        <p class="section-label reveal">— Who we are</p>
+        <h2 class="reveal">More than a haircut.<br /><span class="hl">It's a ritual.</span></h2>
+        <p class="reveal lead">At James Pro we blend old‑school barbering with a fresh, modern edge. Every visit is built around you — your style, your vibe, your time. Sit back, relax, and walk out looking unstoppable.</p>
+        <div class="about__stats">
+          <div class="stat reveal">
+            <strong class="count" data-target="15000">0</strong>
+            <span>Cuts delivered</span>
+          </div>
+          <div class="stat reveal">
+            <strong class="count" data-target="4900" data-suffix="+">0</strong>
+            <span>5‑star reviews</span>
+          </div>
+          <div class="stat reveal">
+            <strong class="count" data-target="6">0</strong>
+            <span>Master barbers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="services__head">
+      <p class="section-label reveal">— What we do</p>
+      <h2 class="reveal">Signature <span class="hl">services</span></h2>
+    </div>
+
+    <div class="services__list">
+      <article class="service reveal" data-cursor="hover">
+        <div class="service__num">01</div>
+        <div class="service__body">
+          <h3>Precision Fade</h3>
+          <p>Skin, low, mid or high — dialled in to the millimetre with a seamless blend.</p>
+        </div>
+        <div class="service__img"><img src="assets/svc-fade.svg" alt="Fade haircut" /></div>
+        <div class="service__price">AED 90</div>
+      </article>
+
+      <article class="service reveal" data-cursor="hover">
+        <div class="service__num">02</div>
+        <div class="service__body">
+          <h3>Hot Towel Shave</h3>
+          <p>Classic straight‑razor shave with hot towels, oils and a cooling finish.</p>
+        </div>
+        <div class="service__img"><img src="assets/svc-shave.svg" alt="Hot towel shave" /></div>
+        <div class="service__price">AED 75</div>
+      </article>
+
+      <article class="service reveal" data-cursor="hover">
+        <div class="service__num">03</div>
+        <div class="service__body">
+          <h3>Beard Sculpt</h3>
+          <p>Shape, line‑up and condition for a beard that frames your face perfectly.</p>
+        </div>
+        <div class="service__img"><img src="assets/svc-beard.svg" alt="Beard grooming" /></div>
+        <div class="service__price">AED 65</div>
+      </article>
+
+      <article class="service reveal" data-cursor="hover">
+        <div class="service__num">04</div>
+        <div class="service__body">
+          <h3>The Full James</h3>
+          <p>Cut, shave, beard and styling. The complete grooming experience.</p>
+        </div>
+        <div class="service__img"><img src="assets/svc-full.svg" alt="Full grooming service" /></div>
+        <div class="service__price">AED 180</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="pricing__head">
+      <p class="section-label reveal">— Menu</p>
+      <h2 class="reveal">Simple, honest <span class="hl">pricing</span></h2>
+    </div>
+    <div class="pricing__cards">
+      <div class="price-card reveal" data-cursor="hover">
+        <h3>The Essential</h3>
+        <div class="price-card__amt"><span>AED</span>90</div>
+        <ul>
+          <li>Consultation</li>
+          <li>Signature haircut</li>
+          <li>Wash & style</li>
+          <li>Neck shave finish</li>
+        </ul>
+        <a href="#book" class="btn btn--ghost" data-cursor="hover">Choose</a>
+      </div>
+      <div class="price-card price-card--featured reveal" data-cursor="hover">
+        <span class="price-card__tag">Most popular</span>
+        <h3>The Full James</h3>
+        <div class="price-card__amt"><span>AED</span>180</div>
+        <ul>
+          <li>Everything in Essential</li>
+          <li>Hot towel straight shave</li>
+          <li>Beard sculpt & oil</li>
+          <li>Styling masterclass</li>
+        </ul>
+        <a href="#book" class="btn btn--solid" data-cursor="hover">Choose</a>
+      </div>
+      <div class="price-card reveal" data-cursor="hover">
+        <h3>The Young Gun</h3>
+        <div class="price-card__amt"><span>AED</span>60</div>
+        <ul>
+          <li>Kids & teens (under 14)</li>
+          <li>Modern cut</li>
+          <li>Style finish</li>
+          <li>Zero stress chair</li>
+        </ul>
+        <a href="#book" class="btn btn--ghost" data-cursor="hover">Choose</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="gallery__head">
+      <p class="section-label reveal">— The work</p>
+      <h2 class="reveal">Fresh from <span class="hl">the chair</span></h2>
+    </div>
+    <div class="gallery__grid">
+      <figure class="gallery__item reveal tall" data-cursor="hover"><img src="assets/gal-1.svg" alt="Haircut result" /></figure>
+      <figure class="gallery__item reveal" data-cursor="hover"><img src="assets/gal-2.svg" alt="Barber at work" /></figure>
+      <figure class="gallery__item reveal" data-cursor="hover"><img src="assets/gal-3.svg" alt="Styled hair" /></figure>
+      <figure class="gallery__item reveal tall" data-cursor="hover"><img src="assets/gal-4.svg" alt="Beard trim" /></figure>
+      <figure class="gallery__item reveal" data-cursor="hover"><img src="assets/gal-5.svg" alt="Fresh cut" /></figure>
+      <figure class="gallery__item reveal" data-cursor="hover"><img src="assets/gal-6.svg" alt="Clean fade" /></figure>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="team" id="team">
+    <div class="team__head">
+      <p class="section-label reveal">— The crew</p>
+      <h2 class="reveal">Meet the <span class="hl">masters</span></h2>
+    </div>
+    <div class="team__grid">
+      <article class="barber reveal" data-cursor="hover">
+        <div class="barber__img"><img src="assets/barber-1.svg" alt="James" /></div>
+        <h3>James K.</h3>
+        <span>Founder · Fade specialist</span>
+      </article>
+      <article class="barber reveal" data-cursor="hover">
+        <div class="barber__img"><img src="assets/barber-2.svg" alt="Omar" /></div>
+        <h3>Omar R.</h3>
+        <span>Beard sculptor</span>
+      </article>
+      <article class="barber reveal" data-cursor="hover">
+        <div class="barber__img"><img src="assets/barber-3.svg" alt="Daniel" /></div>
+        <h3>Daniel V.</h3>
+        <span>Classic shaves</span>
+      </article>
+      <article class="barber reveal" data-cursor="hover">
+        <div class="barber__img"><img src="assets/barber-4.svg" alt="Sami" /></div>
+        <h3>Sami A.</h3>
+        <span>Modern styling</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="quotes" id="reviews">
+    <div class="quotes__head">
+      <p class="section-label reveal">— Word on the street</p>
+      <h2 class="reveal">They keep <span class="hl">coming back</span></h2>
+    </div>
+    <div class="quotes__track" id="quotesTrack">
+      <blockquote class="quote"><p>“Best fade I've had in Dubai, hands down. The vibe is unreal.”</p><cite>— Yousef M.</cite></blockquote>
+      <blockquote class="quote"><p>“Walked in stressed, walked out a new man. The hot towel shave is elite.”</p><cite>— Karim T.</cite></blockquote>
+      <blockquote class="quote"><p>“My son actually enjoys his haircuts now. That says everything.”</p><cite>— Hassan A.</cite></blockquote>
+      <blockquote class="quote"><p>“Clean space, sharp staff, perfect lineup every single time.”</p><cite>— Leo D.</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- Booking CTA -->
+  <section class="book" id="book">
+    <div class="book__inner">
+      <p class="section-label reveal">— Your chair is waiting</p>
+      <h2 class="book__title reveal">READY FOR A <span class="hl">FRESH CUT?</span></h2>
+      <p class="reveal lead">Book online in under a minute, or just walk in. We're open 7 days a week in Downtown Dubai.</p>
+      <form class="book__form reveal" id="bookForm">
+        <input type="text" placeholder="Your name" required data-cursor="hover" />
+        <input type="tel" placeholder="Phone number" required data-cursor="hover" />
+        <select required data-cursor="hover">
+          <option value="" disabled selected>Choose a service</option>
+          <option>The Essential — AED 90</option>
+          <option>The Full James — AED 180</option>
+          <option>Hot Towel Shave — AED 75</option>
+          <option>Beard Sculpt — AED 65</option>
+          <option>The Young Gun — AED 60</option>
+        </select>
+        <button type="submit" class="btn btn--solid" data-cursor="hover">Confirm Booking →</button>
+      </form>
+      <p class="book__note" id="bookNote" hidden>✓ Thanks! We'll text you to confirm your time.</p>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer class="footer" id="contact">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="#home" class="nav__logo" data-cursor="hover"><span class="nav__logo-mark">✄</span> JAMES<span>PRO</span></a>
+        <p>Premium men's barbershop in the heart of Dubai. Sharp looks, bold men.</p>
+        <div class="footer__social">
+          <a href="#" data-cursor="hover">Instagram</a>
+          <a href="#" data-cursor="hover">TikTok</a>
+          <a href="#" data-cursor="hover">WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Visit us</h4>
+        <p>Downtown Boulevard<br />Sheikh Mohammed bin Rashid Blvd<br />Dubai, UAE</p>
+      </div>
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <p>Mon – Thu · 10:00 – 22:00<br />Fri – Sat · 10:00 – 00:00<br />Sun · 12:00 – 22:00</p>
+      </div>
+      <div class="footer__col">
+        <h4>Get in touch</h4>
+        <p><a href="tel:+97140000000" data-cursor="hover">+971 4 000 0000</a><br /><a href="mailto:hello@jamespro.ae" data-cursor="hover">hello@jamespro.ae</a></p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 James Pro Barbershop · Dubai</span>
+      <span>Crafted with sharp scissors ✄</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

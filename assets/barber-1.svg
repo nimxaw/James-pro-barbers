@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g3he83" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff4d2e"/><stop offset="1" stop-color="#c8361f"/>
+    </linearGradient><filter id="fuda1r"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/></filter>
+  </defs>
+  <rect width="600" height="800" fill="url(#g3he83)"/>
+  <g opacity="0.10" stroke="#f4f1ea" stroke-width="20">
+    <circle cx="72" cy="96" r="168.00000000000003" fill="none"/>
+    <circle cx="552" cy="720" r="132" fill="none"/>
+  </g>
+  <g transform="translate(-209.99999999999994 -141.99999999999994) scale(5.1)" stroke="#f4f1ea" stroke-width="6" opacity="0.92"><g stroke-linecap="round" stroke-linejoin="round" fill="none">
+     <circle cx="62" cy="60" r="13"/><circle cx="62" cy="140" r="13"/>
+     <path d="M74 67 L150 133 M74 133 L150 67"/><path d="M150 67 L168 60 M150 133 L168 140"/></g></g>
+  <text x="300" y="656" text-anchor="middle" font-family="Anton, sans-serif" font-size="66" fill="#f4f1ea" opacity="0.95" letter-spacing="1">JAMES</text>
+  
+  <rect width="600" height="800" filter="url(#fuda1r)" opacity="0.5"/>
+</svg>

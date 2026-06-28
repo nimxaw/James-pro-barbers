@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="900" viewBox="0 0 700 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g7y4dk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2c2a22"/><stop offset="1" stop-color="#14130f"/>
+    </linearGradient><filter id="fhze1k"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+    <feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope="0.06"/></feComponentTransfer>
+    <feComposite operator="over" in2="SourceGraphic"/></filter>
+  </defs>
+  <rect width="700" height="900" fill="url(#g7y4dk)"/>
+  <g opacity="0.10" stroke="#ff4d2e" stroke-width="22.5">
+    <circle cx="84" cy="108" r="196.00000000000003" fill="none"/>
+    <circle cx="644" cy="810" r="154" fill="none"/>
+  </g>
+  <g transform="translate(-245 -181) scale(5.95)" stroke="#ff4d2e" stroke-width="6" opacity="0.92"><g stroke-linecap="round" stroke-linejoin="round" fill="none">
+     <rect x="84" y="50" width="32" height="100" rx="16"/>
+     <path d="M88 64 L112 56 M88 84 L112 76 M88 104 L112 96 M88 124 L112 116"/>
+     <path d="M78 50 h44 M78 150 h44"/><path d="M100 50 V40 M100 160 V150"/></g></g>
+  <text x="350" y="738" text-anchor="middle" font-family="Anton, sans-serif" font-size="77" fill="#ff4d2e" opacity="0.95" letter-spacing="1">CLASSIC</text>
+  
+  <rect width="700" height="900" filter="url(#fhze1k)" opacity="0.5"/>
+</svg>
