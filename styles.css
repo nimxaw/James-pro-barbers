@@ -199,7 +199,7 @@ h2 { font-family: var(--font-display); font-size: clamp(2.4rem, 7vw, 5.5rem); li
 .team { padding: clamp(4rem, 10vw, 8rem) clamp(1.2rem, 6vw, 5rem); background: var(--ink); color: var(--cream); }
 .team__head { text-align: center; margin-bottom: 3rem; }
 .team__head .hl { color: var(--accent-2); }
-.team__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.team__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1000px; margin: 0 auto; }
 .barber__img { aspect-ratio: 3/4; border-radius: var(--radius); overflow: hidden; margin-bottom: 1rem; }
 .barber__img img { filter: grayscale(1); transition: filter .6s var(--ease), transform .9s var(--ease); }
 .barber:hover .barber__img img { filter: grayscale(0); transform: scale(1.06); }
